@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <title>User Login and Sessions</title>
+  <link rel="stylesheet" type="text/css" 
+        href="/static/css/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+  <div class="row">
+  <div class="col-xs-12 col-md-offset-3 col-md-6" style="text-align: center;">
+  <div class="form-container">
+    <p class="form-header">Login</p>
+    <form method="POST" action="/login">
+        <label>Username:</label>
+        <input type="text" name="username"><br>
+        <label>Password:</label>
+        <input type="password" name="password"><br>
+        <input type="submit" value="Login">
+    </form>
+  </div>
+  <br><br>
+  <a href="/signup">Sign Up</a>
+  <hr><%= msg %>
+  </div>
+   </div> 
+  </div>
+</body>
+</html>
